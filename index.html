@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword Game</title>
+    <link rel="icon" href="" type="">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>CrossWord</h1>
+        <p>Welcome to the Crossword Game!</p>
+        <button id="startBtn">Start Game</button>
+    </div>
+
+    <div id="categoryContainer" style="display: none;">
+        <button id="backBtn">
+            <i class="bx bx-arrow-back"></i>
+        </button>
+        <h1>Select Category</h1>
+        <div class="category-buttons">
+            <button onclick="startGame('Category 1')">Category 1</button>
+            <button onclick="startGame('Category 2')">Category 2</button>
+            <button onclick="startGame('Category 3')">Category 3</button>
+            <button onclick="startGame('Category 4')">Category 4</button>
+            <button onclick="startGame('Category 5')">Category 5</button>
+        </div>
+    </div>
+
+    <div class="game-board" style="display: none;">
+        <button id="menuBtn">
+            <i class='bx bx-menu'></i>
+        </button>
+        <div id="menu" style="display: none;">
+            <button id="resumeBtn">Resume</button>
+            <button id="quitBtn">Quit</button>
+        </div>
+        <h1>Category-title</h1>
+        <div class="grid"></div>
+        <button id="hintBtn">
+            <i class='bx bx-bulb'></i>
+        </button>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
